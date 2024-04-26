@@ -1,9 +1,14 @@
 import React from "react";
-import { name, city } from "../data/data.js";
+import { name, city } from "./data";
 
-function Home() {
+const Home = () => {
   // update the JSX being returned!
-  return <div>Home</div>;
+  return (
+   <div id="home">
+    <h1>Name is a Web Developer from City</h1>
+    <p>{name} is a Web Developer from {city}</p>
+    </div>
+  );
 }
 
 export default Home;
